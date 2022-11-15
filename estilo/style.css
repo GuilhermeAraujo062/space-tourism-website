@@ -1,22 +1,37 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;600&family=Barlow:wght@200;400;700&family=Bellefair&display=swap');
+
 
 /* Mobile First */
+
+:root {
+    --cor-texto: #D0D6F9;
+
+    --font-texto: 'Barlow', sans-serif;
+    --font-texto2: 'Barlow Condensed', sans-serif;
+    --font-titulo: 'Bellefair', serif;
+}
 
 * {
     padding: 0;
     margin: 0;
     list-style: none;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-texto);
 }
 
 body, html {
     width: 100vw;
+    overflow-x: hidden;
+    background-color: gray;
 }
 
 /* Header */
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,9 +44,119 @@ header {
 }
 
 span#burguer {
+    position: fixed;
+    right: 20px;
+    font-size: 35px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    width: 18rem;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.048);
+    backdrop-filter: blur(40.7742px);
+    display: flex;
+    flex-direction: column;
+}
+
+span#close {
+    position: fixed;
+    top: 30px;
+    right: 20px;
     font-size: 35px;
     color: white;
 }
 
+menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40%;
+    padding-left: 40px;
+}
 
+span.nMenu {
+    font-family: var(--font-texto2);
+    font-weight: bold;
+}
 
+menu > ul > li a {
+    display: block;
+    color: white;
+    padding: 20px;
+    font-family: var(--font-texto2);
+    font-size: 1.3em;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Main */
+
+/* Section 00 Home */
+
+section.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    color: white;
+}
+
+div.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    padding-top: 30px;
+}
+
+div.titulo > h2 {
+    font-family: var(--font-texto2);
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--cor-texto);
+}
+
+div.titulo > h1 {
+    font-family: var(--font-titulo);
+    font-size: 5em;
+    font-weight: 400;
+    line-height: 130px;
+    text-transform: uppercase;
+}
+
+div.titulo > p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--cor-texto);
+    padding-bottom: 200px;
+}
+
+.explorar {
+    background-color: white;
+    color: #0B0D17;
+    padding: 80px 55px;
+    border-radius: 50%;
+    font-family: var(--font-titulo);
+    font-size: 1.4em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.explorar:hover {
+    background-color: rgb(187, 187, 187);
+}
