@@ -43,7 +43,7 @@ header {
     background-size: cover;
 }
 
-span#burguer {
+.spread-menu {
     position: fixed;
     right: 20px;
     font-size: 35px;
@@ -62,14 +62,16 @@ span#burguer {
     backdrop-filter: blur(40.7742px);
     display: flex;
     flex-direction: column;
+    transition: .5s;
 }
 
-span#close {
+.close-button {
     position: fixed;
     top: 30px;
     right: 20px;
     font-size: 35px;
     color: white;
+    cursor: pointer;
 }
 
 menu {
