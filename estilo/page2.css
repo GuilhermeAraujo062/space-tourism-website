@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-span.select {
-    border-bottom: 2px solid white; 
-    padding-bottom: 10px; 
-    color: white;
-}
-
 /* Header */
 
 header {
@@ -40,6 +34,15 @@ header {
     color: white;
     text-transform: uppercase;
     letter-spacing: 3px;
+}
+
+.planet-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+    padding-top: 10px;
 }
 
 .planet {
@@ -115,48 +118,4 @@ header {
     font-size: 2em;
     color: white;
     text-transform: uppercase;
-}
-
-/* Moon */
-
-.moon-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    width: 80%;
-    padding-top: 10px;
-}
-
-/* Mars */
-
-.mars-info {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    width: 80%;
-    padding-top: 10px;
-}
-
-/* Europa */
-
-.europa-info {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    width: 80%;
-    padding-top: 10px;
-}
-
-/* Titan */
-
-.titan-info {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    width: 80%;
-    padding-top: 10px;
 }
