@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/* Section 01 Destination */
+
+.desti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 1.2em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.planet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.picture {
+    width: 200px;
+}
+
+.btn-planet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.btn-planet-page {
+    font-family: var(--font-texto2);
+    font-weight: 400;
+    font-size: 1.1em;
+    padding: 10px;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.descricao > h1 {
+    font-family: var(--font-titulo);
+    font-weight: 400;
+    font-size: 4em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.informacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 50px;
+    border-top: 1px solid #d0d6f97e;
+    padding-top: 20px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.infos h3 {
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.infos h2 {
+    font-weight: 400;
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Moon */
+
+.moon-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+    padding-top: 100px;
+}
+
+/* Mars */
+
+.mars-info {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+    padding-top: 100px;
+}
+
+/* Europa */
+
+.europa-info {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+    padding-top: 100px;
+}
+
+/* Titan */
+
+.titan-info {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+    padding-top: 100px;
+}
