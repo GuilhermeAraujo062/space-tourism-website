@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+:root {
+    --cor-texto: #D0D6F9;
+
+    --font-texto: 'Barlow', sans-serif;
+    --font-texto2: 'Barlow Condensed', sans-serif;
+    --font-titulo: 'Bellefair', serif;
+}
+
 /* Header */
 
 header {
