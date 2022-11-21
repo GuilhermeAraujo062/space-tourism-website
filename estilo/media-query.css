@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* Header */
+
+    header {
+        background-image: url(../assets/home/background-home-tablet.jpg);
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 35rem;
+        height: 10vh;
+        background-color: rgba(255, 255, 255, 0.048);
+        backdrop-filter: blur(40.7742px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        transition: none;
+    }
+
+    .close-button {
+        display: none;
+    }
+
+    menu {
+        display: flex;
+        flex-direction: row;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .nMenu {
+        display: none;
+    }
+
+    menu > ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    menu > ul > li a:hover {
+        border-bottom: 2px solid white;
+        padding-bottom: 18px;
+    }
+
+    /* main */
+
+    /* Section 00 Home */
+
+    .home {
+        background-image: url(../assets/home/background-home-tablet.jpg);
+    }
+
+    div.titulo > h2 {
+        font-size: 1.2em;
+    }
+
+    div.titulo > h1 {
+        font-size: 7em;
+    }
+
+    div.titulo > p {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Header */
+
+    header {
+        background-image: url(../assets/home/background-home-desktop.jpg);
+        background-position: top right;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 35rem;
+        height: 10vh;
+        background-color: rgba(255, 255, 255, 0.048);
+        backdrop-filter: blur(40.7742px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        transition: none;
+    }
+
+    .close-button {
+        display: none;
+    }
+
+    menu {
+        display: flex;
+        flex-direction: row;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .nMenu {
+        display: none;
+    }
+
+    menu > ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    menu > ul > li a:hover {
+        border-bottom: 2px solid white;
+        padding-bottom: 18px;
+    }
+
+    /* main */
+
+    /* Section 00 Home */
+
+    .home {
+        background-image: url(../assets/home/background-home-desktop.jpg);
+        background-position: center right;
+    }
+
+    div.titulo > h2 {
+        font-size: 1.2em;
+    }
+
+    div.titulo > h1 {
+        font-size: 7em;
+    }
+
+    div.titulo > p {
+        font-size: 1.2em;
+    }
+}

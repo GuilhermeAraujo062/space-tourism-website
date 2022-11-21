@@ -1,3 +1,10 @@
+function mudouTamanho() {
+	if (window.innerWidth >= 768)
+		menu.style.right = '0px'
+	else
+		menu.style.right = '-300px'
+}
+
 const spreadMenu = document.querySelector("#spreadMenu");
 
 function openMenu() {
